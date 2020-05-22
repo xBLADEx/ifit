@@ -33,6 +33,7 @@
 	}
 
 	&__main {
+		align-items: center;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 		padding: 24px 40px;

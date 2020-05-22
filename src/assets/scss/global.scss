@@ -139,6 +139,11 @@
 		}
 	}
 
+	&--large {
+		font-weight: $font-weight-semi-bold;
+		padding: 24px 80px;
+	}
+
 	&--reset {
 		background-color: transparent;
 		border: 0;

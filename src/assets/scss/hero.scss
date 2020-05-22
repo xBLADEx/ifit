@@ -1,0 +1,22 @@
+//--------------------------------------------------------------
+// HERO
+//--------------------------------------------------------------
+
+.hero {
+	@include background-image('hero.jpg');
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 800px;
+
+	h1 {
+		color: $color-white;
+		font-size: rem-calc(72);
+		font-weight: $font-weight-semi-bold;
+		margin-bottom: 50px;
+		max-width: 980px;
+		text-align: center;
+	}
+}
