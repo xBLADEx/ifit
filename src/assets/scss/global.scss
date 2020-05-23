@@ -33,43 +33,34 @@
 
 	// <li>
 	&__item {
+		background: linear-gradient(135deg, #0069D2 0%, #28E1A5 100%);
+		border-radius: 50%;
+		padding: 3px;
+
 		&:not(:last-child) {
 			margin-right: 20px;
-		}
-
-		&:nth-child(even) {
-			#{$parent}__link {
-				&:focus,
-				&:hover {
-					svg {
-						transform: rotate(-20deg);
-					}
-				}
-			}
-		}
-
-		&:nth-child(odd) {
-			#{$parent}__link {
-				&:focus,
-				&:hover {
-					svg {
-						transform: rotate(20deg);
-					}
-				}
-			}
 		}
 	}
 
 	// <a>
 	&__link {
 		align-items: center;
-		color: $color-primary;
-		display: flex;
-		font-size: 30px;
+		background-color: $color-shark;
+		border-radius: 50%;
+		color: $color-white;
+		display: inline-flex;
+		font-size: 24px;
+		min-width: 26px;
+		padding: 10px;
 
 		&:focus,
 		&:hover {
-			color: $color-tertiary;
+			color: $color-primary;
+		}
+
+		svg {
+			min-height: 25px;
+			min-width: 25px;
 		}
 	}
 

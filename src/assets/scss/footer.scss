@@ -3,6 +3,64 @@
 //--------------------------------------------------------------
 
 .g-footer {
+	background-color: $color-shark;
+	color: $color-white;
 	font-size: 14px;
+	padding-top: 48px;
 	width: 100%;
+
+	&__top {
+		display: grid;
+		gap: 16px;
+		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+		padding-bottom: 48px;
+	}
+
+	&__heading {
+		color: $color-white;
+		font-size: rem-calc(14);
+		font-weight: $font-weight-bold;
+		margin-bottom: 16px;
+	}
+
+	&__links {
+		font-size: rem-calc(14);
+		font-weight: $font-weight-semi-bold;
+	}
+
+	&__links-item {
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+
+	&__social-container {
+		border-bottom: 2px solid #585A5D;
+		border-top: 2px solid #585A5D;
+		margin-bottom: 24px;
+		padding: 16px;
+		text-align: center;
+	}
+
+	&__bottom {
+		padding-bottom: 24px;
+		text-align: center;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			font-size: rem-calc(14);
+			justify-content: center;
+
+			@include mq($mq-tablet) {
+				flex-direction: row;
+			}
+		}
+
+		li {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
 }

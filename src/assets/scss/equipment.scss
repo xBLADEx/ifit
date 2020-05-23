@@ -17,10 +17,15 @@
 	&__types {
 		color: $color-shark;
 		display: flex;
+		flex-wrap: wrap;
 		font-size: rem-calc(24);
 		font-weight: $font-weight-bold;
 		justify-content: space-between;
 		text-align: center;
+
+		@include mq($mq-tablet) {
+			flex-direction: row;
+		}
 
 		img {
 			max-height: 180px;

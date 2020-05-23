@@ -13,6 +13,7 @@ import "typeface-open-sans"
 import "../assets/scss/index.scss"
 
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = props => {
   const data = useStaticQuery(graphql`
@@ -29,6 +30,7 @@ const Layout = props => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{props.children}</main>
+      <Footer />
     </>
   )
 }
