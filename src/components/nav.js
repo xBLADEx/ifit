@@ -1,32 +1,35 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 const items = ["Exercise", "Nutrition", "Activity", "Sleep"]
 
-const menu = document.querySelector("[data-js-menu]")
-
-function toggleMenu() {
-  menu.classList.toggle("is-active")
-
-  // Overlay
-  overlay()
-}
-
-function overlay() {
-  // Create and append.
-  const overlay = document.createElement("span")
-  overlay.classList.add("navigation__overlay")
-  document.querySelector(".navigation").appendChild(overlay)
-
-  // Remove and close menu.
-  overlay.addEventListener("click", _ => {
-    overlay.remove()
-    menu.classList.remove("is-active")
-  })
-}
-
 const Nav = () => {
+  const [nav, setNav] = useState(false)
+
+  function toggleMenu() {
+    setNav(true)
+
+    // Overlay
+    overlay()
+  }
+
+  // This isn't the React way, I know.
+  function overlay() {
+    const menu = document.querySelector("[data-js-menu]")
+    // Create and append.
+    const overlay = document.createElement("span")
+    overlay.classList.add("navigation__overlay")
+    document.querySelector(".navigation").appendChild(overlay)
+
+    // Remove and close menu.
+    overlay.addEventListener("click", _ => {
+      overlay.remove()
+      menu.classList.remove("is-active")
+      setNav(false)
+    })
+  }
+
   return (
     <nav className="navigation">
       <button
@@ -36,7 +39,10 @@ const Nav = () => {
         <FontAwesomeIcon icon={faBars} />
         <span className="h-visual-hide">Menu</span>
       </button>
-      <ul className="navigation__menu" data-js-menu>
+      <ul
+        className={`navigation__menu ${nav ? "is-active" : null}`}
+        data-js-menu
+      >
         {items.map(link => (
           <li className="navigation__item" key={link}>
             <Link to={link} className="navigation__link">
