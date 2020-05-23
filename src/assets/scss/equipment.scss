@@ -1,0 +1,29 @@
+//--------------------------------------------------------------
+// EQUIPMENT
+//--------------------------------------------------------------
+
+.equipment {
+	margin-bottom: 70px;
+	max-width: 1224px;
+
+	&__heading {
+		color: #34383C;
+		font-size: rem-calc(24);
+		font-weight: $font-weight-semi-bold;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+
+	&__types {
+		color: $color-shark;
+		display: flex;
+		font-size: rem-calc(24);
+		font-weight: $font-weight-bold;
+		justify-content: space-between;
+		text-align: center;
+
+		img {
+			max-height: 180px;
+		}
+	}
+}
