@@ -9,17 +9,17 @@ const Footer = () => {
           <h2 className="g-footer__heading">Company</h2>
           <ul className="g-footer__links">
             <li className="g-footer__links-item">
-              <a href="#" className="g-footer__link">
+              <a href="/" className="g-footer__link">
                 About
               </a>
             </li>
             <li className="g-footer__links-item">
-              <a href="#" className="g-footer__link">
+              <a href="/" className="g-footer__link">
                 Contact Us
               </a>
             </li>
             <li className="g-footer__links-item">
-              <a href="#" className="g-footer__link">
+              <a href="/" className="g-footer__link">
                 Careers
               </a>
             </li>
@@ -29,12 +29,12 @@ const Footer = () => {
           <h2 className="g-footer__heading">Account</h2>
           <ul className="g-footer__links">
             <li className="g-footer__links-item">
-              <a href="#" className="g-footer__link">
+              <a href="/" className="g-footer__link">
                 Log In
               </a>
             </li>
             <li className="g-footer__links-item">
-              <a href="#" className="g-footer__link">
+              <a href="/" className="g-footer__link">
                 Create Account
               </a>
             </li>
@@ -44,12 +44,12 @@ const Footer = () => {
           <h2 className="g-footer__heading">Support</h2>
           <ul className="g-footer__links">
             <li className="g-footer__links-item">
-              <a href="#" className="g-footer__link">
+              <a href="/" className="g-footer__link">
                 Help Center
               </a>
             </li>
             <li className="g-footer__links-item">
-              <a href="#" className="g-footer__link">
+              <a href="/" className="g-footer__link">
                 Accessibility
               </a>
             </li>
@@ -65,10 +65,10 @@ const Footer = () => {
         <ul>
           <li>&copy; iFit.com. All Right Reserved.</li>
           <li>
-            <a href="#">Privacy Policy</a>
+            <a href="/">Privacy Policy</a>
           </li>
           <li>
-            <a href="#">Terms of Use</a>
+            <a href="/">Terms of Use</a>
           </li>
         </ul>
       </div>

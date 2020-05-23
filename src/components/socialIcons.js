@@ -13,7 +13,7 @@ const SocialIcons = () => {
     <ul className="c-social-media">
       <li className="c-social-media__item">
         <a
-          href="#"
+          href="/"
           className="c-social-media__link"
           rel="noopener noreferrer"
           target="_blank"
@@ -24,7 +24,7 @@ const SocialIcons = () => {
       </li>
       <li className="c-social-media__item">
         <a
-          href="#"
+          href="/"
           className="c-social-media__link"
           rel="noopener noreferrer"
           target="_blank"
@@ -35,7 +35,7 @@ const SocialIcons = () => {
       </li>
       <li className="c-social-media__item">
         <a
-          href="#"
+          href="/"
           className="c-social-media__link"
           rel="noopener noreferrer"
           target="_blank"
@@ -46,7 +46,7 @@ const SocialIcons = () => {
       </li>
       <li className="c-social-media__item">
         <a
-          href="#"
+          href="/"
           className="c-social-media__link"
           rel="noopener noreferrer"
           target="_blank"
@@ -57,7 +57,7 @@ const SocialIcons = () => {
       </li>
       <li className="c-social-media__item">
         <a
-          href="#"
+          href="/"
           className="c-social-media__link"
           rel="noopener noreferrer"
           target="_blank"

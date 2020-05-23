@@ -7,7 +7,7 @@ const Course = props => {
   return (
     <li className="course">
       <a
-        href="#"
+        href="/"
         className={`course__link ${
           props.details.shadow === false ? "course__link--no-shadow" : ""
         }`}
