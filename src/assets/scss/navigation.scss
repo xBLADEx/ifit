@@ -37,10 +37,10 @@
 
 	// <a>
 	&__link {
-		color: $color-theme-black;
+		color: lighten($color-shark, 20%);
 		display: block;
 		font-size: rem-calc(14);
-		font-weight: $font-weight-bold;
+		font-weight: $font-weight-semi-bold;
 		text-transform: uppercase;
 
 		&:focus,

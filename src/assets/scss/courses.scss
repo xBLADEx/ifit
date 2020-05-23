@@ -1,0 +1,12 @@
+//--------------------------------------------------------------
+// COURSES
+//--------------------------------------------------------------
+
+.courses {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	max-width: 1224px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
