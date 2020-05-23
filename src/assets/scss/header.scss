@@ -39,8 +39,13 @@
 	&__main {
 		align-items: center;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-		padding: 24px 40px;
+		grid-template-columns: 1fr 1fr;
+		padding: 24px 16px;
+
+		@include mq($mq-tablet) {
+			grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+			padding: 24px 40px;
+		}
 	}
 
 	&__navigation {
@@ -48,7 +53,12 @@
 	}
 
 	&__button {
+		display: none;
 		justify-self: end;
+
+		@include mq($mq-tablet) {
+			display: block;
+		}
 	}
 }
 

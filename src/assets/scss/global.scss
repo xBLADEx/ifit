@@ -30,16 +30,15 @@
 	$parent: &;
 
 	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
 	// <li>
 	&__item {
 		background: linear-gradient(135deg, #0069D2 0%, #28E1A5 100%);
 		border-radius: 50%;
+		margin: 0 10px 16px;
 		padding: 3px;
-
-		&:not(:last-child) {
-			margin-right: 20px;
-		}
 	}
 
 	// <a>

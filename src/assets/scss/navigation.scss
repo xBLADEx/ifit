@@ -5,6 +5,10 @@
 .navigation {
 	position: relative;
 	z-index: 99;
+
+	@include mq($mq-tablet, false) {
+		justify-self: end;
+	}
 }
 
 //-----------------------------------------
