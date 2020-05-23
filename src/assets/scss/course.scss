@@ -3,12 +3,27 @@
 //--------------------------------------------------------------
 
 .course {
-	background-color: $color-white;
-	border-radius: $global-radius;
-	box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
+	&__link {
+		background-color: $color-white;
+		border-radius: $global-radius;
+		box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
+		display: block;
+		height: 100%;
+		transition: transform 0.3s ease-in-out;
 
-	&--no-shadow {
-		box-shadow: none;
+		&:focus,
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		&--no-shadow {
+			box-shadow: none;
+		}
+	}
+
+
+	&__image-container {
+		position: relative;
 	}
 
 	&__image {
@@ -25,6 +40,32 @@
 		padding: 16px;
 	}
 
+	&__workout {
+		background-color: rgba(0, 12, 40, 0.543025);
+		border-radius: 0 $global-radius 0 0;
+		bottom: 0;
+		color: $color-white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-width: 112px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+	}
+
+	&__workout-text {
+		font-size: rem-calc(10);
+		margin-bottom: 8px;
+		text-transform: uppercase;
+	}
+
+	&__workout-number {
+		display: block;
+		font-size: rem-calc(28);
+	}
+
 	&__instructor {
 		border-radius: $global-radius;
 		display: block;
@@ -38,6 +79,7 @@
 	}
 
 	&__stats {
+		color: $color-black;
 		display: flex;
 		font-size: rem-calc(10);
 		font-weight: $font-weight-bold;
